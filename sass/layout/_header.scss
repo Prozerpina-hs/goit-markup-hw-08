@@ -1,0 +1,11 @@
+/* Шапка */
+/* Лого */
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+    &__flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 96px;
+    }
+}

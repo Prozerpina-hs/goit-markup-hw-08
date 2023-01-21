@@ -1,0 +1,80 @@
+.form {
+    display: block;
+
+    &__block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__block:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    &__label {
+        margin-bottom: 4px;
+
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: var(--secondary-text-color);
+    }
+
+    &__input {
+        padding: 11px 12px 11px 40px;
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__svg {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__input:hover+&__svg,
+    &__input:focus+&__svg,
+    &__input:focus-visible+&__svg {
+        fill: var(--nav-color);
+    }
+
+    &__textarea {
+        height: 120px;
+        width: 448px;
+        padding: 12px 16px;
+
+        resize: none;
+    }
+
+    &__textarea::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &__input,
+    &__textarea {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        cursor: pointer;
+    }
+
+    &__textarea:hover,
+    &__textarea:focus,
+    &__input:hover,
+    &__input:focus {
+        border-color: var(--nav-color);
+    }
+
+    &__input:focus-visible,
+    &__textarea:focus-visible {
+        outline: 1px solid var(--nav-color);
+    }
+}

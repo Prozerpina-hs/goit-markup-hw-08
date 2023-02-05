@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     padding: 60px 0;
-    max-width: 1600px;
 
     background-color: var(--secondary-background-color);
 }
@@ -21,8 +20,11 @@
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        gap: 102px;
         flex-basis: 50%;
+
+        .footer__contact {
+            margin-right: auto;
+        }
     }
 
     @media screen and (min-width: 1200px) {

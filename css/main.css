@@ -48,7 +48,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-right: 0;
+  margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -67,6 +67,9 @@ img {
   margin: -1px;
 }
 
+.section {
+  margin: 0 auto;
+}
 @media screen and (max-width: 1199px) {
   .section {
     padding: 60px 0;
@@ -83,14 +86,14 @@ img {
   margin-right: auto;
   padding: 0 15px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    max-width: 480px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -436,6 +439,9 @@ img {
   cursor: pointer;
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscribe {
+    margin-top: 60px;
+  }
   .subscribe__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -691,6 +697,23 @@ img {
   background-color: #188CE8;
 }
 
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--main-white-color);
+  border: none;
+  cursor: pointer;
+}
+
 /* Шапка */
 /* Лого */
 .header {
@@ -703,7 +726,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 96px;
 }
 
 /* Hero */
@@ -1046,7 +1068,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 60px 0;
-  max-width: 1600px;
   background-color: var(--secondary-background-color);
 }
 
@@ -1077,9 +1098,11 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 102px;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+  .footer__flex .footer__contact {
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {

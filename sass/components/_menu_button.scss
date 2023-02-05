@@ -1,0 +1,15 @@
+.menu-button {
+    // position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    // top: 10px;
+    // right: 10px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-white-color);
+    border: none;
+
+    cursor: pointer;
+}

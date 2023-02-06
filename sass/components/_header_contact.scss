@@ -3,6 +3,10 @@
 //     .header-contact {}
 // }
 .header-contact {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: auto;
     margin-bottom: auto;
@@ -40,10 +44,8 @@
     &__link:hover {
             color: var(--nav-color);
     }
-}
 
-@media screen and (min-width: 1200px) {
-    .header-contact {
+    @media screen and (min-width: 1200px) {
         display: flex;
         gap: 50px;
 

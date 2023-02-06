@@ -7,4 +7,9 @@
     display: flex;
     justify-content: space-between;
     }
+
+    @media screen and (max-width: 767px) {
+        padding: 16px 0;
+        min-height: 60px;
+    }
 }

@@ -1,7 +1,6 @@
 .logo {
     width: 145px;
     height: 31px;
-    margin-right: 93px;
 
     color: var(--first-logo-color);
     font-family: "Raleway", sans-serif;
@@ -12,5 +11,10 @@
 
     &__blue {
     color: var(--nav-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-right: 93px;
     }
 }

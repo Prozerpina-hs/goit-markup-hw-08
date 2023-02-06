@@ -14,7 +14,6 @@
     text-align: center;
 
     &__text {
-        width: 360px;
         margin: 0 auto;
         
         color: var(--main-white-color);
@@ -24,6 +23,10 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         text-align: center;
+
+        @media screen and (min-width: 480px) {
+            width: 360px;
+        }
     }
     &__button {
         border: 0;

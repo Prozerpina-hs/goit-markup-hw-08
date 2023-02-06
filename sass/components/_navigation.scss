@@ -4,9 +4,6 @@
     justify-content: space-between;
 
     @media screen and (max-width: 767px) {
-        // position: relative;
-    //    justify-content: space-between; 
-
         &__list {
         display: none;
         }

@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--main-white-color);
+    overflow: auto;
 
     transform: translateY(-100%);
     transition: transform 500ms;
@@ -18,14 +19,13 @@
     &__flex {
         display: flex;
         flex-direction: column;
-        gap: 300px;
+        // gap: 300px;
+        height: 100%;
     }
 
     &__list {
         display: inline-block;
-        // margin-top: 48px;
-        // margin-left: 40px;
-        margin-bottom: 30px;
+        margin-bottom: auto;
 
         font-weight: 500;
         font-size: 40px;
@@ -74,19 +74,14 @@
     }
         
 
-    &__social-link:not(4)::after {
-        display: block;
-        position: absolute;
+    &__social-link:nth-child(-n+3)::after {
+       
+        margin-left: 10px;
         content: "";
-
-        width: 22px;
-        height: 0px;
-        left: 87px;
-        top: 10px;
-        align-items: center;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
         transform: rotate(90deg);
+        
     }
 }
 

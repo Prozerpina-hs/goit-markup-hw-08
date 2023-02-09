@@ -1,6 +1,5 @@
 /* Hero */
 .hero {
-    // display: block;
     padding: 118px 0;
     margin-left: auto;
     margin-right: auto;
@@ -9,10 +8,36 @@
     background-color: #c4c4c4;
     background-image:
         linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/studio/hero-img.jpg");
+        url("../../images/studio/hero-480.jpg");
 
     text-align: center;
 
+    @media screen and (min-device-pixel-ratio:2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../../images/studio/hero-960.jpg');
+        } 
+              
+    @media screen and (min-width: 768px) {
+        background-image: url('../../images/studio/hero-768.jpg');
+
+        @media screen and (min-device-pixel-ratio:2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url('../../images/studio/hero-1536.jpg');
+        }
+    }  
+
+    @media screen and (min-width: 1200px) {
+        background-image: url('../../images/studio/hero-1600.jpg');
+
+        @media screen and (min-device-pixel-ratio:2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../../images/studio/hero-3200.jpg');
+        }
+    }
+     
     &__text {
         margin: 0 auto;
         

@@ -109,19 +109,28 @@
                 <h2 class="capabilities__title">Чим ми займаємося</h2>
                 <ul class="capabilities__list">
                     <li class="capabilities__item">
-                        <img src="./images/studio/frame1.jpg" alt="Десктопні додатки" width="370">
+                        <img srcset="./images/studio/frame1-370.jpg 1x, ./images/studio/frame1-740.jpg 2x"
+                        src="./images/studio/frame1-370.jpg" 
+                        alt="Десктопні додатки"
+                        width="370">
                         <div class="capabilities__label">
                             <p>Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="capabilities__item">
-                        <img src="./images/studio/frame2.jpg" alt="Мобільні додатки" width="370">
+                        <img srcset="./images/studio/frame2-370.jpg 1x, ./images/studio/frame2-740.jpg 2x"
+                         src="./images/studio/frame2-370.jpg" 
+                         alt="Мобільні додатки"
+                         width="370"/>
                         <div class="capabilities__label">
                             <p>Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="capabilities__item">
-                        <img src="./images/studio/frame3.jpg" alt="Дизайнерські рішення" width="370">
+                        <img srcset="./images/studio/frame3-370.jpg 1x, ./images/studio/frame3-740.jpg 2x" 
+                        src="./images/studio/frame3-370.jpg" 
+                        alt="Дизайнерські рішення" 
+                        width="370">
                         <div class="capabilities__label">
                             <p>Дизайнерські рішення</p>
                         </div>
@@ -135,7 +144,20 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="./images/studio/igor.jpg" alt="Ігор Дем'яненко" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                    srcset="./images/studio/igor-270.jpg 1x,
+                                        ./images/studio/igor-540.jpg 2x"/>
+                           <source media="(min-width: 768px)" 
+                                    srcset="./images/studio/igor-354.jpg 1x,
+                                        ./images/studio/igor-708.jpg 2x" />
+                             <img srcset="./images/studio/igor-450.jpg 1x,
+                                        ./images/studio/igor-900.jpg 2x"
+                                 src="./images/studio/igor-450.jpg" 
+                                 alt="Ігор Дем'яненко" 
+                                 width="270"> 
+                        </picture>
+                       
                         <div class="team__card">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__position">Product Designer</p>
@@ -168,7 +190,19 @@
                         </div>    
                     </li>  
                     <li class="team__item">
-                        <img src="./images/studio/olha.jpg" alt="Ольга Рєпіна" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/studio/olga-270.jpg 1x,
+                                    ./images/studio/olga-540.jpg 2x" />
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/studio/olga-354.jpg 1x,
+                                    ./images/studio/olga-708.jpg 2x" />
+                            <img srcset="./images/studio/olga-450.jpg 1x,
+                                        ./images/studio/olga-900.jpg 2x"
+                                     src="./images/studio/olga-450.jpg"
+                                    alt="Ольга Рєпіна" 
+                                    width="270">
+                        </picture>
                         <div class="team__card">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__position">Frontend Developer</p>
@@ -201,7 +235,18 @@
                         </div>   
                     </li>
                     <li class="team__item">
-                        <img src="./images/studio/nikolai.jpg" alt="Микола Тарасов" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/studio/nikolai-270.jpg 1x,
+                                    ./images/studio/nikolai-540.jpg 2x"/>
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/studio/nikolai-354.jpg 1x,
+                                     ./images/studio/nikolai-708.jpg 2x" />
+                            <img srcset="./images/studio/nikolai-450.jpg 1x,
+                                         ./images/studio/nikolai-900.jpg 2x" 
+                                         src="./images/studio/nikolai-450.jpg"
+                                alt="Микола Тарасов" width="270">
+                        </picture>
                         <div class="team__card">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__position">Marketing</p>
@@ -238,7 +283,18 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/studio/mihail.jpg" alt="Михайло Єрмаков" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/studio/mihail-270.jpg 1x,
+                                    ./images/studio/mihail-540.jpg 2x" />
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/studio/mihail-354.jpg 1x,
+                                     ./images/studio/mihail-708.jpg 2x" />
+                            <img srcset="./images/studio/mihail-450.jpg 1x,
+                                         ./images/studio/mihail-900.jpg 2x" 
+                                         src="./images/studio/mihail-450.jpg"
+                                alt="Михайло Єрмаков" width="270">
+                        </picture>
                         <div class="team__card">
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p class="team__position">Designer</p>
@@ -414,22 +470,22 @@
                     <a href="mailto:info@devstudio.com" class="mobile-contact__link-mail">info@devstudio.com</a>
                 </li>
             </ul>
-        </div>
-        <!-- Modal-menu__social -->
-        <ul class="mobile-menu__social">
-            <li class="mobile-menu__social-item">
-                <a class="mobile-menu__social-link">Instagram</a>
-            </li>
-            <li class="mobile-menu__social-item">
-                <a class="mobile-menu__social-link">Twitter</a>
-            </li>
-            <li class="mobile-menu__social-item">
-                <a class="mobile-menu__social-link">Facebook</a>
-            </li>
-            <li class="mobile-menu__social-item">
-                <a class="mobile-menu__social-link">LinkedIn</a>
-            </li>
-        </ul>
+            <!-- Modal-menu__social -->
+            <ul class="mobile-menu__social">
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link">Instagram</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link">Twitter</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link">Facebook</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>   
     </div> 
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>

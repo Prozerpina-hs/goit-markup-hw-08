@@ -1,7 +1,3 @@
-
-// @media screen and (min-width: 480px) {
-//     .header-contact {}
-// }
 .header-contact {
     @media screen and (max-width: 767px) {
         display: none;
@@ -48,14 +44,6 @@
     @media screen and (min-width: 1200px) {
         display: flex;
         gap: 50px;
-
-    // &__item:not(last-child) {
-    // margin-left: 50px;
-    // }
-
-    // &__item:last-child {
-    // margin-left: 0;
-    // }
 
         &__link {
         display: flex;

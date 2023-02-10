@@ -32,8 +32,9 @@
     }
     
     &__link {
-        display: inline-block;
-        padding: 16px 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 170px;
         height: 92px;
         border: 1px solid #AFB1B8;

@@ -1,9 +1,13 @@
 .foot.logo {
+    display: inline-flex;
     color: var(--main-white-color);
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin: 0 auto;
+    margin-right: 0;
+    @media screen and (max-width: 1199px) {
+        margin: auto;
+    }
 }

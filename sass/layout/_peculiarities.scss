@@ -1,7 +1,10 @@
 .peculiarities {
     @media screen and (max-width: 767px) {
-        &__item:not(first-child) {
+        &__item:not(:first-child) {
                 margin-top: 30px;
+        }
+        &__name {
+            text-align: center;
         }
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {

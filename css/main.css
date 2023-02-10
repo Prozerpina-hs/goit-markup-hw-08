@@ -251,13 +251,21 @@ img {
 }
 
 .foot.logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: var(--main-white-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin: 0 auto;
+  margin-right: 0;
+}
+@media screen and (max-width: 1199px) {
+  .foot.logo {
+    margin: auto;
+  }
 }
 
 .address {
@@ -308,7 +316,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer.social-conteiner {
-    margin-left: 70px;
+    margin-left: 94px;
   }
 }
 
@@ -317,8 +325,12 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
   color: var(--main-white-color);
+}
+@media screen and (max-width: 1199px) {
+  .footer-social__name {
+    text-align: center;
+  }
 }
 
 .footer.social {
@@ -348,9 +360,13 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
   color: var(--main-white-color);
+}
+@media screen and (max-width: 1199px) {
+  .subscribe__text {
+    text-align: center;
+  }
 }
 .subscribe__form {
   display: -webkit-box;
@@ -477,7 +493,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    margin-left: 93px;
+    margin-left: 94px;
   }
   .subscribe__form {
     gap: 12px;
@@ -814,7 +830,7 @@ img {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin-top: 64px;
-  gap: 20px;
+  gap: 10px;
 }
 .mobile-menu__social-item {
   display: block;
@@ -823,15 +839,9 @@ img {
   line-height: 1.22;
   color: var(--nav-color);
 }
-.mobile-menu__social-link {
-  position: relative;
-}
-.mobile-menu__social-link:nth-child(-n+3)::after {
-  margin-left: 10px;
-  content: "";
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.mobile-menu__social-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-contact {
@@ -870,7 +880,7 @@ img {
 @media screen and (max-width: 767px) {
   .container.header__flex {
     position: relative;
-    padding: 16px 0;
+    padding: 16px 15px;
     min-height: 60px;
   }
 }
@@ -964,8 +974,11 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
-  .peculiarities__item:not(first-child) {
+  .peculiarities__item:not(:first-child) {
     margin-top: 30px;
+  }
+  .peculiarities__name {
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1066,7 +1079,22 @@ img {
 .team {
   background-color: var(--primary-background-color);
 }
+.team__item {
+  background-color: var(--main-white-color);
+  text-align: center;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 @media screen and (min-width: 320px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
   .team__title {
     margin-bottom: 30px;
     color: var(--primary-text-color);
@@ -1076,7 +1104,7 @@ img {
     text-align: center;
   }
   .team__card {
-    padding: 30px;
+    padding: 30px 122px 24px;
     text-align: center;
   }
   .team__name {
@@ -1091,21 +1119,17 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
   .team__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
+  .team__card {
+    padding: 30px 74px 24px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__title {
+    margin-bottom: 50px;
     font-size: 36px;
   }
   .team__list {
@@ -1113,19 +1137,25 @@ img {
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
-    margin-top: 50px;
   }
-  .team__item {
-    background-color: var(--main-white-color);
-    text-align: center;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  .team__card {
+    padding: 30px 32px;
   }
 }
 
 /* Соц. лінки */
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
   height: 44px;
   margin-top: 16px;
 }
@@ -1204,8 +1234,15 @@ img {
   }
 }
 .client__link {
-  display: inline-block;
-  padding: 16px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -1245,6 +1282,11 @@ img {
   padding: 60px 0;
   background-color: var(--secondary-background-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__style {
+    padding: 60px 75px;
+  }
+}
 
 .footer__flex {
   display: -webkit-box;
@@ -1271,11 +1313,6 @@ img {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
   }
   .footer__flex .footer__contact {
     margin-right: auto;
@@ -1303,6 +1340,12 @@ img {
             align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__contact {
+    display: block;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;

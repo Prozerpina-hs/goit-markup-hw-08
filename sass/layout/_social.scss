@@ -1,6 +1,12 @@
 /* Соц. лінки */
 .social {    
+    display: flex;
     height: 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+    
     margin-top: 16px;
     
     &__item {
